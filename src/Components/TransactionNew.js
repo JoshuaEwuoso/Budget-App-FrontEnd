@@ -49,9 +49,8 @@ const TransactionNew = () => {
                 <input
                     id="date"
                     name="date"
-                    type="text"
+                    type="date"
                     value={newEntry.date}
-                    placeholder="On what date?"
                     onChange={handleText}
                 />
                 <label htmlFor="amount">Amount:</label>
@@ -65,12 +64,12 @@ const TransactionNew = () => {
                 />
                 <label htmlFor="location">Location:</label>
                 <input
-                id="location"
-                name="location"
-                type="text"
-                value={newEntry.location}
-                onChange={handleText}
-                placeholder="From what account?"
+                    id="location"
+                    name="location"
+                    type="text"
+                    value={newEntry.location}
+                    onChange={handleText}
+                    placeholder="From what account?"
                 />
                 <label htmlFor="source">Source:</label>
                 <input
