@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { useNavigate, useParams, Link } from "react-router-dom";
 
 
-function TransactionDetails() {
+const TransactionDetails = () => {
   const URL = process.env.REACT_APP_API_URL;
   const [entry, setEntry] = useState([]);
   let { index } = useParams();

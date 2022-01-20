@@ -1,4 +1,4 @@
-function Home() {
+const Home = () => {
     return (
       <div>
         <h2>Welcome to my Budget App!</h2>

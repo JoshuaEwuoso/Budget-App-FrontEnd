@@ -1,7 +1,7 @@
 import React from "react";
 import TransactionNew from "../Components/TransactionNew";
 
-function New() {
+const New = () => {
     return (
             <div>
                 <h2>New Transaction</h2>

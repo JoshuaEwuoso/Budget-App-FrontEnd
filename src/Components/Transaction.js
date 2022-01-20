@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-function Transaction({ entry, index }) {
+const Transaction = ({ entry, index }) => {
   return (
     <tr>
       <td>

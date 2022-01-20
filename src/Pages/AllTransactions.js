@@ -1,7 +1,7 @@
 import React from "react";
 import TransactionApi from "../Components/TransactionApi";
 
-function Logs() {
+const Logs = () => {
     return (
         <div>
             <h2>All Transactions</h2>

@@ -3,7 +3,7 @@ import axios from "axios";
 import Transaction from "./Transaction";
 
 
-function TransactionApi() {
+const TransactionApi = () => {
     const [entry, setEntry] = useState([]);
     const URL = process.env.REACT_APP_API_URL;
     
