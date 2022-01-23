@@ -3,10 +3,10 @@ import TransactionEdit from "../Components/TransactionEdit";
 
 const Edit = () => {
     return (
-            <div>
-                <h2>Edit</h2>
-                <TransactionEdit />
-            </div>
+        <div>
+            <h2>Edit</h2>
+            <TransactionEdit />
+        </div>
     );
 }
 
