@@ -2,7 +2,6 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import { useNavigate, useParams, Link } from "react-router-dom";
 
-
 const TransactionDetails = () => {
   const URL = process.env.REACT_APP_API_URL;
   const [entry, setEntry] = useState([]);
@@ -13,7 +12,6 @@ const TransactionDetails = () => {
     axios
     .get(`${URL}/transactions/${index}`)
     .then((response) => setEntry(response.data));
-    console.log("I'm here too");
   }, []);
 
   const handleDelete = () => {

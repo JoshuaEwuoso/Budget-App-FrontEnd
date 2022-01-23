@@ -26,8 +26,8 @@ const TransactionEdit = () => {
     };
     
     const handleSubmit = (event) => {
-      event.preventDefault();
-      axios
+        event.preventDefault();
+        axios
         .put(`${URL}/transactions/${index}`, newEntry)
         .then(() => navigate(`/transactions/${index}`));
     };

@@ -1,7 +1,6 @@
-import { useEffect, useState } from "react";
 import axios from "axios";
 import Transaction from "./Transaction";
-
+import { useEffect, useState } from "react";
 
 const TransactionApi = () => {
     const [entry, setEntry] = useState([]);
@@ -11,15 +10,12 @@ const TransactionApi = () => {
         axios
         .get(`${URL}/transactions`)
         .then((response) => setEntry(response.data));
-        console.log("I'm here");
-      }, []);
+    }, []);
 
     return (
         <div>
             <section>
                 <table>
-                    <thead>
-                    </thead>
                     <tbody>
                         {entry.map((entry, index) => {
                             return <Transaction key={index} entry={entry} index={index} />;
@@ -30,4 +26,5 @@ const TransactionApi = () => {
         </div>
     );
 }
+
 export default TransactionApi;
