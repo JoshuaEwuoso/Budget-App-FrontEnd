@@ -6,6 +6,7 @@ import Home from "./Pages/Home";
 import NavBar from "./Pages/NavBar";
 import Four0Four from "./Pages/Four0Four";
 import AllTransactions from "./Pages/AllTransactions";
+import Balance from "./Pages/Balance";
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <NavBar />  
         <Routes>
           <Route exact path="/" element={<Home />} />
+          <Route path="/transactions/balance" element={<Balance/>} />
           <Route path="/transactions/new" element={<New/>} />
           <Route path="/transactions" element={<AllTransactions/>} />
           <Route path="/transactions/:index" element={<Show/>} />
