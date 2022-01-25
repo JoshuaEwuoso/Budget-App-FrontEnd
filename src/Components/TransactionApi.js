@@ -16,6 +16,13 @@ const TransactionApi = () => {
         <div>
             <section>
                 <table>
+                    <thead>
+                        <tr className="transaction">
+                            <th>Date</th>
+                            <th className="names">Name</th>
+                            <th>Amount</th>
+                        </tr>
+                    </thead>
                     <tbody>
                         {entry.map((entry, index) => {
                             return <Transaction key={index} entry={entry} index={index} />;
