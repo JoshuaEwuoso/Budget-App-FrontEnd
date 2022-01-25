@@ -1,12 +1,16 @@
 import React from "react";
+import NavBar from "./NavBar";
 import TransactionEdit from "../Components/TransactionEdit";
 
 const Edit = () => {
     return (
-        <div>
-            <h2>Edit</h2>
-            <TransactionEdit />
-        </div>
+        <>
+            <NavBar />
+            <div>
+                <h2>Edit</h2>
+                <TransactionEdit />
+            </div>
+        </>
     );
 }
 

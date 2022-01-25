@@ -1,12 +1,16 @@
 import React from "react";
+import NavBar from "./NavBar";
 import TransactionApi from "../Components/TransactionApi";
 
 const Logs = () => {
     return (
-        <div>
-            <h2>All Transactions</h2>
-            <TransactionApi />
-        </div>
+        <>
+            <NavBar />
+            <div>
+                <h2>All Transactions</h2>
+                <TransactionApi />
+            </div>
+        </>
     );
 }
 

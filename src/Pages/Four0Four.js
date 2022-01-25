@@ -1,8 +1,14 @@
+import "../Styling/Error.css";
+import NavBar from "./NavBar";
+
 const Four0Four = () => {
   return (
-    <div>
-      <h1>Sorry, page not found...</h1>
-    </div>
+    <>
+      <NavBar />
+      <div className="error">
+        <h1>Sorry, page not found...</h1>
+      </div>
+    </>
   );
 }
 

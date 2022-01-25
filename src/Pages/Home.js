@@ -1,9 +1,15 @@
+import "../Styling/Home.css";
+import NavBar from "./NavBar";
+
 const Home = () => {
   return (
-    <div>
-      <h2>Welcome to my Budget App!</h2>
-    </div>
+    <>
+      <NavBar />
+      <div className="welcome">
+        <h2>Welcome to my Budget App!</h2>
+      </div>
+    </>
   );
 }
-  
+
 export default Home;

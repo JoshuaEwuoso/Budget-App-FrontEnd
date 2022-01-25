@@ -1,12 +1,16 @@
 import React from "react";
+import NavBar from "./NavBar";
 import TransactionDetails from "../Components/TransactionDetails";
 
 const Show = () => {
     return (
-        <div>
-            <h2>Show</h2>
-            <TransactionDetails />
-        </div>
+        <>
+            <NavBar />
+            <div>
+                <h2>Show</h2>
+                <TransactionDetails />
+            </div>
+        </>
     );
 }
 
