@@ -15,7 +15,7 @@ function App() {
         <NavBar />  
         <Routes>
           <Route exact path="/" element={<Home />} />
-          <Route path="/transactions/balance" element={<Balance/>} />
+          <Route path="/balances" element={<Balance/>} />
           <Route path="/transactions/new" element={<New/>} />
           <Route path="/transactions" element={<AllTransactions/>} />
           <Route path="/transactions/:index" element={<Show/>} />
