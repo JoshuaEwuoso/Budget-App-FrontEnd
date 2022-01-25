@@ -1,4 +1,5 @@
 import axios from "axios";
+import "../Styling/Details.css";
 import { useState, useEffect } from "react";
 import { useNavigate, useParams, Link } from "react-router-dom";
 
@@ -21,7 +22,7 @@ const TransactionDetails = () => {
   };
 
   return (
-    <article>
+    <article className="details">
         <p>
             Date: {entry.date}
         </p>

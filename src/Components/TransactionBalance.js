@@ -1,4 +1,6 @@
 import axios from "axios";
+import "../Styling/Balance.css";
+import "../Styling/NavBar.css";
 import { useEffect, useState } from "react";
 
 const TransactionBalance = () => {
@@ -31,7 +33,7 @@ const TransactionBalance = () => {
 
 
     return (
-        <div>
+        <div className="balance">
             <h3>
                 ${balance}
             </h3>

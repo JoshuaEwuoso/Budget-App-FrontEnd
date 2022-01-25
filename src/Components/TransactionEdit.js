@@ -1,4 +1,5 @@
 import axios from "axios";
+import "../Styling/Edit.css";
 import { useState, useEffect } from "react";
 import { Link, useParams, useNavigate } from "react-router-dom";
 
@@ -34,7 +35,7 @@ const TransactionEdit = () => {
 
     return (
         <>
-            <div>
+            <div className="edit">
                 <form onSubmit={handleSubmit}>
                 <label htmlFor="name">Entry Name:</label>
                 <input
@@ -85,12 +86,12 @@ const TransactionEdit = () => {
                 <input type="submit" />
                 </form>
             </div>
-            <div>
+            <div className="edit">
                 <Link to={"/transactions"}>
                     <button>Cancel</button>
                 </Link>
             </div>
-            <div>
+            <div className="edit">
                 <Link to={`/transactions/${index}`}>
                     <button>Back</button>
                 </Link>
