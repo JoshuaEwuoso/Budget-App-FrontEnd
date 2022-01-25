@@ -21,7 +21,6 @@ const TransactionDetails = () => {
     .then(() => navigate("/transactions"));
   };
 
-  
   return (
     <>
         <table>
