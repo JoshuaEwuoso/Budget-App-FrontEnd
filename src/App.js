@@ -3,7 +3,6 @@ import New from "./Pages/New";
 import Show from "./Pages/Show";
 import Edit from "./Pages/Edit";
 import Home from "./Pages/Home";
-import NavBar from "./Pages/NavBar";
 import Four0Four from "./Pages/Four0Four";
 import AllTransactions from "./Pages/AllTransactions";
 import Balance from "./Pages/Balance";
@@ -12,7 +11,6 @@ import Balance from "./Pages/Balance";
 function App() {
   return (
       <div>
-        <NavBar />  
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="/balances" element={<Balance/>} />
