@@ -3,10 +3,12 @@ import TransactionBalance from "../Components/TransactionBalance";
 
 const Balance = () => {
     return (
-        <div>
-            <h2>Balance</h2>
-            <TransactionBalance />
-        </div>
+        <>
+            <div>
+                <h2>Balance</h2>
+                <TransactionBalance />
+            </div>
+        </>
     );
 }
 
