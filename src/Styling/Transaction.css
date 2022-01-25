@@ -1,5 +1,25 @@
 .transaction {
-	background: rgb(126, 117, 185);
 	text-decoration: none;
 	color: black;
+	font-weight: bold;
+}
+
+table {
+	width: 80%;
+	margin: 30px auto;
+	border-collapse: collapse;
+}
+
+tr {
+	background-color: lightgrey;
+}
+
+th {
+	background-color: #1c87c9;
+}
+
+th,
+td {
+	padding: 10px;
+	border: 1px solid #666;
 }
