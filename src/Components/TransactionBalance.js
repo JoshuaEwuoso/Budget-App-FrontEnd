@@ -1,6 +1,5 @@
 import axios from "axios";
 import "../Styling/Balance.css";
-import "../Styling/NavBar.css";
 import { useEffect, useState } from "react";
 
 const TransactionBalance = () => {
@@ -33,16 +32,21 @@ const TransactionBalance = () => {
 
 
     return (
-        <div className="balance">
-            <h3>
-                ${balance}
-            </h3>
-            <h3>
-                Money Out: ${moneyOut}
-            </h3>
-            <h3>
-                Money In: ${moneyIn}
-            </h3>
+        <div>
+            <table>
+                <thead>
+                    <tr className="details">
+                        <th>Balance</th>
+                        <th>Money Made</th>
+                        <th>Money Spent</th>
+                    </tr>
+                </thead>
+                <tr className="transaction">
+                    <td>${balance}</td>
+                    <td>${moneyIn}</td>
+                    <td>${moneyOut}</td>
+                </tr>
+            </table>
         </div>
     );
 }

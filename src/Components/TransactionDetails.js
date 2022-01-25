@@ -22,35 +22,39 @@ const TransactionDetails = () => {
   };
 
   return (
-    <article className="details">
-        <p>
-            Date: {entry.date}
-        </p>
-        <p>
-            Name: {entry.name}
-        </p>
-        <p>
-            Amount: ${entry.amount}
-        </p>
-        <p>
-            Location: {entry.location}
-        </p>
-        <p>
-            Source: {entry.source}
-        </p>
-        <div>
-            <Link to={`/transactions/${index}/edit`}>
-                <button>Edit</button>
-            </Link>
-            <Link to={"/transactions"}>
-                <button>Back</button>
-            </Link>
-        </div>
-        <div>
-            {" "}
-            <button onClick={handleDelete}>Delete</button>
-        </div>
-    </article>
+    <>
+        <table>
+            <thead>
+                <tr className="details">
+                    <th>Date</th>
+                    <th>Name</th>
+                    <th>Amount</th>
+                    <th>Location</th>
+                    <th>Source</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr className="transaction">
+                    <td>{entry.date}</td>
+                    <td>{entry.name}</td>
+                    <td>${entry.amount}</td>
+                    <td>{entry.location}</td>
+                    <td>{entry.source}</td>
+                </tr>
+                <br/>
+                <tr className="buttons">
+                    <Link to={`/transactions/${index}/edit`}>
+                    <button>Edit</button>
+                    </Link>
+                    <Link to={"/transactions"}>
+                        <button>Back</button>
+                    </Link>
+                    {" "}
+                    <button onClick={handleDelete}>Delete</button>
+                </tr>
+            </tbody>
+        </table>
+    </>
   );
 }
 
