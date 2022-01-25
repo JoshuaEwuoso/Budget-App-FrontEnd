@@ -3,10 +3,12 @@ import { Link } from "react-router-dom";
 
 const Transaction = ({ entry, index }) => {
   return (
-    <tr>
-      <td className="transaction">
-        <Link to={`/transactions/${index}`} className="transaction"><br/>Date: {entry.date}<br/>Name: {entry.name}<br/>Amount: ${entry.amount}</Link>
+    <tr className="transaction">
+      <td>{entry.date}</td>
+      <td>
+        <Link to={`/transactions/${index}`}>{entry.name}</Link>
       </td>
+      <td>${entry.amount}</td>
     </tr>
   );
 }
