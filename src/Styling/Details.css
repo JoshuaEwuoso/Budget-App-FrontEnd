@@ -1,3 +1,8 @@
 .details {
-	background: rgb(235, 237, 100);
+	text-align: center;
+}
+
+.buttons {
+	background: none;
+	display: flex;
 }

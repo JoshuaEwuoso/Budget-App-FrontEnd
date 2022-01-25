@@ -4,6 +4,12 @@
 	font-weight: bold;
 }
 
+h2 {
+	text-align: center;
+	margin-top: 5%;
+	color: blanchedalmond;
+}
+
 table {
 	width: 80%;
 	margin: 30px auto;
