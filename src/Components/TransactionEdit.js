@@ -55,7 +55,7 @@ const TransactionEdit = () => {
                     onChange={handleText}
                 />
                 <label htmlFor="amount">Amount:</label>
-                <textarea
+                <input
                     id="amount"
                     name="amount"
                     type="number"
