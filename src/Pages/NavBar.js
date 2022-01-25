@@ -1,17 +1,22 @@
 import { Link } from "react-router-dom";
+import "./NavBar.css";
+import Balance from "../Components/TransactionBalance";
 
 const NavBar = () => {
   return (
-    <nav>
+    <nav className="NavBar">
       <h1>
-        <Link to="/">Budget App</Link>
+        <Link to="/" className="link">Budget App</Link>
       </h1>
       <h3>
-        <Link to="/transactions">All Transactions</Link>
+        <Link to="/transactions" className="link all">All Transactions</Link>
       </h3>
       <button>
-        <Link to="/transactions/new">New Transaction</Link>
+        <Link to="/transactions/new" className="link">New Transaction</Link>
       </button>
+      <h3>
+        <Link to="/balances" className="link balance">Balance: <Balance /></Link>
+      </h3>
     </nav>
   );
 }
