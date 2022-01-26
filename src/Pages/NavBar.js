@@ -18,6 +18,11 @@ const NavBar = () => {
     
   return (
     <nav className="NavBar">
+      {
+        entry.amount > 1000
+        ? <h2 style={{color: "green"}}>{`Account Balance: $${entry.amount.toLocaleString("en-US")}`}</h2>
+        : <h2 style={{color: "red"}}>{`Account Balance: $${entry.amount.toLocaleString("en-US")}`}</h2>
+      }
       <h1 className="logo">
         <Link to="/" className="link">Budget App</Link>
       </h1>
