@@ -105,11 +105,11 @@ const TransactionNew = () => {
                             </td>
                         </tr>
                         </tbody>
-                        <br/>
                     <div>
-                    <input type="submit" className="button"/>
-                        <Link to={"/transactions"} className="button">
-                            <button>Cancel</button>
+                        <br/>
+                        <input type="submit" className="button"/>
+                        <Link to={"/transactions"}>
+                            <button className="button">Cancel</button>
                         </Link>
                     </div>
                     </table>

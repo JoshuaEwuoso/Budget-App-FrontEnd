@@ -12,7 +12,7 @@ const TransactionBalance = () => {
         .then((response) => setEntry(response.data));
     }, []);
 
-    const balance = entry.map(item => Number(item.amount)).reduce((prev, curr) => Number(prev) + Number(curr), 0);
+    const balance = entry.map(item => Number(item.amount)).reduce((prev, curr) => Number(prev) + Number(curr), 0).toLocaleString("en-US");
     
     const moneyOut = entry.map(item => {
         if(typeof item.amount === "number" || typeof item.amount === "string") {
@@ -20,7 +20,7 @@ const TransactionBalance = () => {
         }
     }).filter((item) => {
         return item.includes("-")
-    }).reduce((prev, curr) => Number(prev) + Number(curr), 0);
+    }).reduce((prev, curr) => Number(prev) + Number(curr), 0).toLocaleString("en-US");
 
     const moneyIn = entry.map(item => {
         if(typeof item.amount === "number" || typeof item.amount === "string") {
@@ -28,7 +28,7 @@ const TransactionBalance = () => {
         }
     }).filter((item) => {
         return (!item.includes("-"))
-    }).reduce((prev, curr) => Number(prev) + Number(curr), 0);
+    }).reduce((prev, curr) => Number(prev) + Number(curr), 0).toLocaleString("en-US");
 
 
     return (

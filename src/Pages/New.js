@@ -1,5 +1,6 @@
 import React from "react";
 import NavBar from "./NavBar";
+import "../Styling/New.css";
 import TransactionNew from "../Components/TransactionNew";
 
 const New = () => {

@@ -26,7 +26,9 @@
 }
 
 .buttonNew {
-	border-radius: 5px;
+	border-radius: 15px;
 	margin-bottom: 20px;
 	margin-top: 20px;
+	font-weight: bold;
+	height: 55%;
 }

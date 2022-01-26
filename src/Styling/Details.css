@@ -1,8 +1,13 @@
 .details {
 	text-align: center;
+	margin-top: 10%;
 }
 
 .buttons {
 	background: none;
 	display: flex;
+}
+
+.button {
+	font-weight: bold;
 }

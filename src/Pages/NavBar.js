@@ -27,10 +27,11 @@ const NavBar = () => {
       </h3>
         <Link to="/balances" className="link">
           <div>
+            Balance:
             {
               balance > 0
-              ? <h3 style={{color: "green"}}>Balance: {`$${balance.toLocaleString("en-US")}`}</h3>
-              : <h3 style={{color: "red"}}>Balance: {`$${balance.toLocaleString("en-US")}`}</h3>
+              ? <h3 style={{color: "green"}}>{`$${balance.toLocaleString("en-US")}`}</h3>
+              : <h3 style={{color: "red"}}>{`$${balance.toLocaleString("en-US")}`}</h3>
             }
           </div>
         </Link>

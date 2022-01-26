@@ -1,5 +1,6 @@
 import axios from "axios";
 import "../Styling/Edit.css";
+import "../Styling/Details.css";
 import { useState, useEffect } from "react";
 import { Link, useParams, useNavigate } from "react-router-dom";
 
@@ -104,14 +105,14 @@ const TransactionEdit = () => {
                                 />
                             </td>
                         </tr>
-                        <br/>
                         <div className="edit">
-                            <input type="submit" />
+                            <br/>
+                            <input type="submit" className="button"/>
                             <Link to={`/transactions/${index}`}>
-                                <button>Back</button>
+                                <button className="button">Back</button>
                             </Link>
                             <Link to={"/transactions"}>
-                                <button>Cancel</button>
+                                <button className="button">Cancel</button>
                             </Link>
                         </div>
                     </table>

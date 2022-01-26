@@ -8,7 +8,7 @@ const Transaction = ({ entry, index }) => {
       <td>
         <Link to={`/transactions/${index}`}>{entry.name}</Link>
       </td>
-      <td>${entry.amount}</td>
+      <td>${entry.amount.toLocaleString("en-US")}</td>
     </tr>
   );
 }

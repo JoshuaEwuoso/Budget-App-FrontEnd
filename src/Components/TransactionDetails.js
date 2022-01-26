@@ -44,13 +44,13 @@ const TransactionDetails = () => {
                 <br/>
                 <tr className="buttons">
                     <Link to={`/transactions/${index}/edit`}>
-                    <button>Edit</button>
+                    <button className="button">Edit</button>
                     </Link>
                     <Link to={"/transactions"}>
-                        <button>Back</button>
+                        <button className="button">Back</button>
                     </Link>
                     {" "}
-                    <button onClick={handleDelete}>Delete</button>
+                    <button onClick={handleDelete} className="button">Delete</button>
                 </tr>
             </tbody>
         </table>
